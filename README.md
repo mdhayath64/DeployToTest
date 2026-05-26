@@ -52,4 +52,6 @@ You should see:
 	}
 	```
 	Powershell example:
+	```
 	Invoke-RestMethod -Method Post -Uri "http://localhost:8000/api/items" -ContentType "application/json" -Body '{"name":"Sample Item","price":25}'
+ 	```
