@@ -27,7 +27,7 @@ async function getCollection() {
 }
 
 app.get('/', (req, res) => {
-  res.send('Hello, world!');
+  res.send('Hello, world! With db');
 });
 
 app.get('/api/items', async (req, res) => {
@@ -82,7 +82,7 @@ app.post('/api/items', async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+  console.log(`Server is running at http://localhost:${port} with db`);
 });
 
 process.on('SIGINT', async () => {
